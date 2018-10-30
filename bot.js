@@ -1513,6 +1513,7 @@ client.on('message', message => {
         if(message.author.id !== 441584713799303183) return message.reply(`**هذا الكوماند لصاحب البوت فقط**`);
         client.destroy();
         client.login(`NDYyODg0OTMzODc5NDYzOTM2.DqX-tQ.9MDvAwvFs9uLjx-l8M4aLLwvZ2k`);
+        message.channel.send(`:white_check_mark: | تمام انا سويت اعادع تشغيل من قبل <@${message.author.id}>`)
     }
 });
 
