@@ -1504,6 +1504,23 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {
   });
  
  
+
+
+
+client.on('message', message => {
+    let prefix = "!";
+    if(message.content.startsWith(prefix + "restart")){
+        if(message.author.id !== '441584713799303183') return message.reply(`**هذا الكوماند لصاحب البوت فقط**`);
+        client.destroy();
+        client.login(`NDYyODg0OTMzODc5NDYzOTM2.DqX-tQ.9MDvAwvFs9uLjx-l8M4aLLwvZ2k`);
+    }
+});
+
+
+
+
+
+
  
  
  
